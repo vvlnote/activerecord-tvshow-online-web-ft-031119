@@ -6,11 +6,11 @@ class Show < ActiveRecord::Base
 	end
 
 	def self.most_popular_show
-    show = Show.order(:rating).last
+    Show.order(:rating).last
 	end
 
 	def self.lowest_rating
-  
+    Show.order(:rating).first
 	end
 
 	def self.least_popular_show
